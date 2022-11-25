@@ -1,25 +1,30 @@
 // Calcola la somma dei primi 10 numeri di un array.
 
 const list = [
-    '1',
-    '2',
-    '3',
-    '4',
-    '5',
-    '6',
+    '13',
+    '24',
+    '333',
+    '42',
+    '523',
+    '63',
     '7',
-    '8',
+    '85',
     '9',
     '10',
-    '11',
+    '113',
     '12'
 ];
 
 let somma = 0;
 
-for ( let i = 0; i < 10; i++ ) {
+let maxValue = list[0];
 
+for ( let i = 0; i < 10; i++ ) {
     somma += parseInt (list[i]);
+
+    if ( maxValue < parseInt (list[i])){
+        maxValue = parseInt (list[i]);
+    }
 }
 
 console.log(somma);
@@ -29,3 +34,7 @@ console.log(somma);
 let media = somma / 10;
 
 console.log(media);
+
+// Calcola la somma, la media e il valore massimo dei primi 10 numeri di un array.
+
+console.log(maxValue);
