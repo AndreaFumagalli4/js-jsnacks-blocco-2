@@ -13,6 +13,7 @@ for ( i = 0; i < 6; i++){
     userNumber = parseInt ( prompt ('Inserisci un numero.'));
 
     if ( userNumber % 2 === 1){
+        
         list.push(userNumber);
     }
 }
